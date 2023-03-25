@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Currency Exchange</title>
+	<link rel="stylesheet" href="/src/css/styles.css">
+</head>
+<body>
+	<header>
+		<h1>Currency Exchange</h1>
+	</header>
+	<main>
+		<form action="" method="post">
+			<div class="input-container">
+				<label for="from-currency">From:</label>
+				<select id="from-currency" name="from-currency">
+					<option value="USD">US Dollar</option>
+					<option value="EUR">Euro</option>
+					<option value="GBP">British Pound</option>
+					<option value="JPY">Japanese Yen</option>
+					<option value="CNY">Chinese Yuan</option>
+				</select>
+				<input type="number" name="from-amount" id="from-amount" placeholder="Amount" required>
+			</div>
+			<div class="input-container">
+				<label for="to-currency">To:</label>
+				<select id="to-currency" name="to-currency">
+					<option value="USD">US Dollar</option>
+					<option value="EUR">Euro</option>
+					<option value="GBP">British Pound</option>
+					<option value="JPY">Japanese Yen</option>
+					<option value="CNY">Chinese Yuan</option>
+				</select>
+				<input type="number" name="to-amount" id="to-amount" placeholder="Amount" readonly>
+			</div>
+			<button type="submit">Convert</button>
+		</form>
+	</main>
+	<footer>
+		<p>&copy; 2023 Currency Exchange</p>
+	</footer>
+</body>
+</html> 
