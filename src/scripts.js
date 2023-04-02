@@ -10,6 +10,8 @@ document.querySelector('form').addEventListener('submit', (event) => {
   event.preventDefault(); // prevent the form from submitting
 
   // Get the exchange rate from an API (in this example, using exchangerate-api.com)
+  require('dotenv').config();
+  const apiKey = process.env.API_KEY;
   const url = `https://v6.exchangerate-api.com/v6/YOUR-API-KEY/latest/USD`;
   fetch(url)
     .then(response => response.json())

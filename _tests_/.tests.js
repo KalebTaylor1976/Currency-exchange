@@ -1,4 +1,4 @@
-import from "../src/";
+import { fromCurrency, fromAmount, toCurrency, toAmount } from '../src/scripts.js';
 
 describe('Test form', () => {
   let fromCurrency;
