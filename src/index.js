@@ -1,3 +1,6 @@
+import { fromAmount, toCurrency, toAmount } from '../src/scripts.js';
+
+
 // Get input elements
 const fromCurrency = document.getElementById('from-currency');
 const fromAmount = document.getElementById('from-amount');
